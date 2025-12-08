@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  rifa-bot:
+    build: .
+    container_name: rifa_bot
+    restart: unless-stopped
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
+      - MAX_USERS=${MAX_USERS:-10}
+      - PASSWORD=${PASSWORD:-secreto}
+    volumes:
+       # Optional: if you want to persist logs or simple files later
+       - ./logs:/app/logs
