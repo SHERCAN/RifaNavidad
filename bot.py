@@ -24,7 +24,7 @@ load_dotenv()
 
 # Configuration
 TOKEN = os.getenv("BOT_TOKEN")
-MAX_USERS = int(os.getenv("MAX_USERS", "10"))
+MAX_USERS = 12
 PASSWORD = os.getenv("PASSWORD", "secret123")
 ADMIN_ID = os.getenv("ADMIN_ID")
 

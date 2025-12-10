@@ -7,7 +7,7 @@ services:
     restart: unless-stopped
     environment:
       - BOT_TOKEN=${BOT_TOKEN}
-      - MAX_USERS=${MAX_USERS:-10}
+      - MAX_USERS=${MAX_USERS:-12}
       - PASSWORD=${PASSWORD:-secreto}
     volumes:
        # Optional: if you want to persist logs or simple files later
